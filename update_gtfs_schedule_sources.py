@@ -2,9 +2,9 @@ import os
 from datetime import datetime, timedelta
 import pandas as pd
 from zipfile import ZipFile
-from tools.operations import get_latest_datasets, update_gtfs_schedule_source, GTFS
-from tools.helpers import download_dataset
-from tools.constants import (
+from mobilitydb.tools.operations import get_latest_datasets, update_gtfs_schedule_source, GTFS
+from mobilitydb.tools.helpers import download_dataset
+from mobilitydb.tools.constants import (
     PATHWAYS_TXT,
     FARES_ATTRIBUTES_TXT,
     FARES_PRODUCTS_TXT,

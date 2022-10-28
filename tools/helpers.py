@@ -8,7 +8,7 @@ import pandas as pd
 from pandas.errors import ParserError
 from unidecode import unidecode
 import uuid
-from tools.constants import (
+from mobilitydb.tools.constants import (
     STOP_LAT,
     STOP_LON,
     MDB_ARCHIVES_LATEST_URL_TEMPLATE,
