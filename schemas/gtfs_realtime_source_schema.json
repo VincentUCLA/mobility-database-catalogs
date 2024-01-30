@@ -28,6 +28,10 @@
       "type": "string",
       "description": "An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source."
     },
+    "feed_contact_email": {
+      "type": "string",
+      "description": "An email to use to contact the provider of the feed."
+    },
     "static_reference": {
       "type": "array",
       "items": {
@@ -150,6 +154,23 @@
       "required": [
         "direct_download"
       ]
+    },
+    "redirect": {
+      "type": "array",
+      "description": "A list of feed IDs that should be used as a replacement for this feed.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The target feed id of that redirect."
+          },
+          "comment": {
+            "type": "string",
+            "description": "A comment explaining the redirect."
+          }
+        }
+      }
     }
   },
   "required": ["mdb_source_id", "data_type", "entity_type", "provider", "urls"]
